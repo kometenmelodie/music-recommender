@@ -9,6 +9,25 @@ packages = [{include = "music_recommender"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 
+[tool.ruff]
+select = [
+    # Pyflakes
+    "F",
+    # Pycodestyle
+    "E",
+    "W",
+    # isort
+    "I001"
+]
+line-length = 90
+target-version = "py311"
+
+[tool.ruff.isort]
+known-first-party = ["recommender"]
+
+[tool.black]
+line-length = 90
+target-version = ["py311"]
 
 [build-system]
 requires = ["poetry-core"]
