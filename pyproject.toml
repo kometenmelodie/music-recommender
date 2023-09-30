@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "music-recommender"
+version = "0.1.0"
+description = ""
+authors = ["Jakob <88966745+kometenmelodie@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "music_recommender"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
