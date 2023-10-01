@@ -7,7 +7,12 @@ readme = "README.md"
 packages = [{include = "music_recommender"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
+scikit-learn = "^1.3.1"
+numba = "^0.58.0"
+umap-learn = "^0.5.4"
+plotly = "^5.17.0"
+pandas = "1.5.3"
 
 [tool.ruff]
 select = [
