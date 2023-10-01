@@ -11,3 +11,6 @@ __pycache__/
 coverage.xml
 .cache
 .pytest_cache/
+
+# Files
+*.html
