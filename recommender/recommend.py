@@ -20,9 +20,13 @@ class TrackRecommender:
         song = song[["id", "name", "album", "artists"]]
         return song.to_dict(orient="records")[0]
 
-    def resolve_song_name_to_id(self, song_name: str) -> str:
+    def resolve_song_name_to_id(self, song_name: str) -> str | None:
         """Get id based on a song's name."""
         song_id = self.song_data[self.song_data["name"] == song_name]["id"]
+
+        if song_id.empty:
+            return None
+
         return song_id.to_string(index=False)
 
     def _get_query_array(self, song_id: str) -> np.ndarray:
