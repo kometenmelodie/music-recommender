@@ -34,10 +34,6 @@ target-version = "py311"
 [tool.ruff.isort]
 known-first-party = ["recommender"]
 
-[tool.black]
-line-length = 90
-target-version = ["py311"]
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
