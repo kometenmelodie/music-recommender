@@ -16,13 +16,15 @@ pandas = "1.5.3"
 
 [tool.ruff]
 select = [
-    # Pyflakes
-    "F",
-    # Pycodestyle
-    "E",
+    "F", # Pyflakes
+    "E", # Pycodestyle
     "W",
-    # isort
-    "I001"
+    "I001", # isort
+    "PD", # pandas-vet
+    "PT", # flake8-pytest-style
+    "SIM", # flake8-simplify
+    "PTH", # flake8-use-pathlib
+    "ERA", # eradicate
 ]
 line-length = 90
 target-version = "py311"
