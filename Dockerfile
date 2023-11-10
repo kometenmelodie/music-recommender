@@ -15,4 +15,4 @@ COPY recommender/ ./recommender
 COPY app.py .
 
 # command to run on container start
-CMD [ "litestar", "run", "--host", "0.0.0.0", "--port", "8001"]
+CMD [ "litestar", "run", "--host", "0.0.0.0", "--port", "8001" ]
