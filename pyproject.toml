@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "music-recommender"
 version = "0.1.0"
-description = ""
+description = "Recommendation system for songs."
 authors = ["Jakob <88966745+kometenmelodie@users.noreply.github.com>"]
 readme = "README.md"
 
