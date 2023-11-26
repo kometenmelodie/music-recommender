@@ -9,7 +9,7 @@ from recommender import TrackRecommender
 
 
 class Track(BaseModel):
-    track_id: str = Field(alias="id")
+    spotify_id: str = Field(alias="id")
     name: str
     album: str
     artists: str
@@ -49,12 +49,12 @@ async def recommend(
     ],
 ) -> Track:
     """Get a recommendation based on a given track."""
-    track_id = rec.resolve_song_name_to_id(song_name=data.track_name)
+    spotify_id = rec.resolve_song_name_to_id(song_name=data.track_name)
 
-    if track_id is None:
+    if spotify_id is None:
         raise NotFoundException(f"Track {data.track_name} was not found.")
 
-    track = rec.recommend(song_id=track_id)
+    track = rec.recommend(song_id=spotify_id)
     track = Track.model_validate(track)
 
     return track
