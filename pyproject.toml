@@ -18,8 +18,8 @@ umap-learn = "^0.5.4"
 
 
 [tool.poetry.group.app.dependencies]
-litestar = {extras = ["standard"], version = "^2.2.1"}
-pydantic = "^2.4.2"
+litestar = {extras = ["standard"], version = "^2.3.2"}
+pydantic = "^2.5.2"
 
 
 [tool.poetry.group.dev.dependencies]
