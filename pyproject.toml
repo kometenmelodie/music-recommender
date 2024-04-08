@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.13"
-pandas = "^2.1.3"
+pandas = "^2.2.1"
 
 
 [tool.poetry.group.model.dependencies]
@@ -18,12 +18,12 @@ umap-learn = "^0.5.4"
 
 
 [tool.poetry.group.app.dependencies]
-litestar = {extras = ["standard"], version = "^2.3.2"}
-pydantic = "^2.5.2"
+litestar = {extras = ["standard"], version = "^2.8.1"}
+pydantic = "^2.6.4"
 
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.4.3"
+pytest = "^8.1.1"
 
 [tool.ruff]
 select = [
